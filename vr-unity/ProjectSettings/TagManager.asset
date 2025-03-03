@@ -3,7 +3,25 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Locomotion
+  - PassThrough
+  - PassThroughButton
+  - LocoButton
+  - LocoText
+  - QDSUISharedThemeColor
+  - QDSUIBorderlessButton
+  - QDSUIIcon
+  - QDSUIToggleButton
+  - QDSUITextSecondaryColor
+  - QDSUISecondaryButton
+  - QDSUIAccentColor
+  - QDSUITooltip
+  - QDSUIToggleBorderlessButton
+  - Ground
+  - Desk
+  - Cube
+  - GameManager
   layers:
   - Default
   - TransparentFX

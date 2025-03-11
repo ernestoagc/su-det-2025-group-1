@@ -5882,7 +5882,7 @@ MonoBehaviour:
   - {fileID: 1398370187}
   level2: []
   level3: []
-  playSoundButton1: {fileID: 0}
+  playSoundButton1: {fileID: 1709367159}
   playSoundButton2: {fileID: 0}
   playSoundButton3: {fileID: 0}
 --- !u!4 &344951147
@@ -25697,7 +25697,7 @@ RectTransform:
   m_GameObject: {fileID: 1709367157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5.6081, y: 5.6081, z: 5.6081}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1426107117}
@@ -25705,7 +25705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -879.99963, y: -525}
+  m_AnchoredPosition: {x: -408, y: 292}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1709367159

@@ -1,51 +1,108 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
 
 public class LightManager : MonoBehaviour
 {
-    public GameObject[] lightGroup1;
-    public GameObject[] lightGroup2;
-    public GameObject[] lightGroup3;
+    public GameObject[] level1Lights;
+    public GameObject[] level2Lights;
+    public GameObject[] level3Lights;
 
-    public Button toggleLightButton1;
-    public Button toggleLightButton2;
-    public Button toggleLightButton3;
+    public Button lightButton1;
+    public Button lightButton2;
+    public Button lightButton3;
 
-    private bool isGroup1On = false;
-    private bool isGroup2On = false;
-    private bool isGroup3On = false;
+    private Button activeButton = null;
+    private GameObject[] activeLightGroup = null;
 
     void Start()
     {
-        if (toggleLightButton1 != null)
+        if (lightButton1 != null)
         {
-            toggleLightButton1.onClick.AddListener(() => ToggleLights(lightGroup1, ref isGroup1On));
+            lightButton1.onClick.AddListener(() => OnLightButtonClicked(lightButton1, level1Lights));
         }
 
-        if (toggleLightButton2 != null)
+        if (lightButton2 != null)
         {
-            toggleLightButton2.onClick.AddListener(() => ToggleLights(lightGroup2, ref isGroup2On));
+            lightButton2.onClick.AddListener(() => OnLightButtonClicked(lightButton2, level2Lights));
         }
 
-        if (toggleLightButton3 != null)
+        if (lightButton3 != null)
         {
-            toggleLightButton3.onClick.AddListener(() => ToggleLights(lightGroup3, ref isGroup3On));
+            lightButton3.onClick.AddListener(() => OnLightButtonClicked(lightButton3, level3Lights));
         }
     }
 
-    void ToggleLights(GameObject[] lightGroup, ref bool isOn)
+
+    void OnLightButtonClicked(Button clickedButton, GameObject[] lightGroup)
+    {
+        bool isTurningOn = (activeButton != clickedButton); 
+   
+
+        if (isTurningOn)
+        {
+            
+            if (activeLightGroup != null)
+            {
+              
+                ToggleLightGroup(activeLightGroup, false);
+            }
+
+           
+            activeButton = clickedButton;
+            activeLightGroup = lightGroup;
+            DisableOtherButtons(clickedButton);
+
+         
+            ToggleLightGroup(lightGroup, true);
+        }
+        else
+        {
+           
+            activeButton = null;
+            activeLightGroup = null;
+            EnableAllButtons();
+         
+            ToggleLightGroup(lightGroup, false);
+        }
+    }
+
+    
+    void ToggleLightGroup(GameObject[] lightGroup, bool state)
     {
         foreach (GameObject obj in lightGroup)
         {
-            Light light = obj.GetComponent<Light>();
-            if (light != null)
+            
+            LightFlickr flickerScript = obj.GetComponent<LightFlickr>();
+            if (flickerScript != null)
             {
-                light.enabled = !isOn;
+                flickerScript.ToggleLight(state);
+            }
+
+              Light lightComponent = obj.GetComponent<Light>();
+            if (lightComponent != null)
+            {
+                lightComponent.enabled = state;
             }
         }
-        isOn = !isOn;
+    }
+
+ 
+    void DisableOtherButtons(Button active)
+    {
+        if (lightButton1 != active) lightButton1.interactable = false;
+        if (lightButton2 != active) lightButton2.interactable = false;
+        if (lightButton3 != active) lightButton3.interactable = false;
+    }
+
+   
+    void EnableAllButtons()
+    {
+        lightButton1.interactable = true;
+        lightButton2.interactable = true;
+        lightButton3.interactable = true;
     }
 }

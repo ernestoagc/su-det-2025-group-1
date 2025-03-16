@@ -13,44 +13,53 @@ public class SoundManager : MonoBehaviour
     public Button playSoundButton2;
     public Button playSoundButton3;
 
-
-    private bool isPlayingLevel1 = false;
-    private bool isPlayingLevel2 = false;
-    private bool isPlayingLevel3 = false;
+    private bool isPlaying = false;  // Track if any sound is playing
+    private Button activeButton = null; // Track currently active button
 
     void Start()
     {
+        // Optional: Auto-assign button listeners (useful if not assigned manually in Unity Editor)
         if (playSoundButton1 != null)
         {
-            playSoundButton1.onClick.AddListener(() => ToggleSound(level1, ref isPlayingLevel1, playSoundButton1, playSoundButton2, playSoundButton3));
+            playSoundButton1.onClick.AddListener(() => OnButtonClicked(1));
         }
 
         if (playSoundButton2 != null)
         {
-            playSoundButton2.onClick.AddListener(() => ToggleSound(level2, ref isPlayingLevel2, playSoundButton2, playSoundButton1, playSoundButton3));
+            playSoundButton2.onClick.AddListener(() => OnButtonClicked(2));
         }
 
         if (playSoundButton3 != null)
         {
-            playSoundButton3.onClick.AddListener(() => ToggleSound(level3, ref isPlayingLevel3, playSoundButton3, playSoundButton1, playSoundButton2));
+            playSoundButton3.onClick.AddListener(() => OnButtonClicked(3));
         }
     }
 
-    void ToggleSound(GameObject[] soundGroup, ref bool isPlaying, Button activeButton, Button button1, Button button2)
+    // Public method to assign in the Unity Editor
+    public void OnButtonClicked(int level)
     {
-        if (isPlaying)
+        if (level == 1) ToggleSound(level1, playSoundButton1);
+        else if (level == 2) ToggleSound(level2, playSoundButton2);
+        else if (level == 3) ToggleSound(level3, playSoundButton3);
+    }
+
+    void ToggleSound(GameObject[] soundGroup, Button clickedButton)
+    {
+        if (isPlaying && activeButton == clickedButton) // If the same button is clicked again, turn it off
         {
-            StopSoundGroup(soundGroup);
-            EnableButtons(button1, button2); // Re-enable other buttons
+            StopAllSounds();
+            isPlaying = false;
+            activeButton = null;
+            EnableAllButtons();
         }
         else
         {
-            StopAllSounds(); // Ensure only one group plays at a time
+            StopAllSounds(); // Stop all sounds before playing the new one
             PlaySoundGroup(soundGroup);
-            DisableButtons(button1, button2); // Disable other buttons
+            isPlaying = true;
+            activeButton = clickedButton;
+            DisableOtherButtons(clickedButton);
         }
-
-        isPlaying = !isPlaying;
     }
 
     void PlaySoundGroup(GameObject[] soundGroup)
@@ -65,6 +74,13 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void StopAllSounds()
+    {
+        StopSoundGroup(level1);
+        StopSoundGroup(level2);
+        StopSoundGroup(level3);
+    }
+
     void StopSoundGroup(GameObject[] soundGroup)
     {
         foreach (GameObject obj in soundGroup)
@@ -77,30 +93,17 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void StopAllSounds()
+    void DisableOtherButtons(Button active)
     {
-        StopSoundGroup(level1);
-        StopSoundGroup(level2);
-        StopSoundGroup(level3);
-        EnableButtons(playSoundButton1, playSoundButton2, playSoundButton3); // Re-enable all buttons
+        if (playSoundButton1 != active) playSoundButton1.interactable = false;
+        if (playSoundButton2 != active) playSoundButton2.interactable = false;
+        if (playSoundButton3 != active) playSoundButton3.interactable = false;
     }
 
-    void DisableButtons(Button button1, Button button2)
+    void EnableAllButtons()
     {
-        button1.interactable = false;
-        button2.interactable = false;
-    }
-
-    void EnableButtons(Button button1, Button button2)
-    {
-        button1.interactable = true;
-        button2.interactable = true;
-    }
-
-    void EnableButtons(Button button1, Button button2, Button button3)
-    {
-        button1.interactable = true;
-        button2.interactable = true;
-        button3.interactable = true;
+        playSoundButton1.interactable = true;
+        playSoundButton2.interactable = true;
+        playSoundButton3.interactable = true;
     }
 }

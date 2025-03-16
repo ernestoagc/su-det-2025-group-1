@@ -22,6 +22,8 @@ TagManager:
   - Desk
   - Cube
   - GameManager
+  - Wall
+  - Chair
   layers:
   - Default
   - TransparentFX

@@ -4,11 +4,15 @@ public class DetectCollisions : MonoBehaviour
 {
     
     public WebSocketClient webSocketClient;
+    public GameManager gameManager;
+    
+        
     
     // Start is called before the first frame update
     private void Start()
     {
         webSocketClient = GameObject.Find("WebSocketManager").GetComponent<WebSocketClient>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -22,7 +26,8 @@ public class DetectCollisions : MonoBehaviour
         // 
         if (!other.gameObject.CompareTag("Ground"))
         {  
-          webSocketClient.SendWebSocketMessage("VIBRATE LEFT:1000");
+            gameManager.AddCube();
+         // webSocketClient.SendWebSocketMessage("VIBRATE LEFT:1000");
           
         }
     }

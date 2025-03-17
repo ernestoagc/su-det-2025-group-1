@@ -24,6 +24,8 @@ TagManager:
   - GameManager
   - Wall
   - Chair
+  - User
+  - Person
   layers:
   - Default
   - TransparentFX

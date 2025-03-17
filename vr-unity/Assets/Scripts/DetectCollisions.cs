@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class DetectCollisions : MonoBehaviour
 {
     
@@ -23,10 +23,12 @@ public class DetectCollisions : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         Debug.Log("======OnCollisionEnter: "+ other.gameObject.tag);
+        
+        SceneManager.LoadScene("safety-environment");
         // 
         if (!other.gameObject.CompareTag("Ground"))
         {  
-            gameManager.AddCube();
+         //   gameManager.AddCube();
          // webSocketClient.SendWebSocketMessage("VIBRATE LEFT:1000");
           
         }

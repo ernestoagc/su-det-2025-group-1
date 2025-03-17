@@ -21,13 +21,18 @@ public class WalkManager : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
        if (!other.gameObject.CompareTag("Ground"))
-        {  
-            transform.Rotate(0 , 50f ,0);
+       {
+           ChangeWalkingRotation();
            // webSocketClient.SendWebSocketMessage("VIBRATE LEFT:1000");
-        
-        }
+
+       }
     }
-    
-    
-    
+
+    public void ChangeWalkingRotation()
+    {
+        transform.Rotate(0 , 50f ,0);
+    }
+
+
+
 }

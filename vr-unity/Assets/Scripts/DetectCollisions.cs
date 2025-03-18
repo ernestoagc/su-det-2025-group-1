@@ -28,7 +28,6 @@ public class DetectCollisions : MonoBehaviour
         {   
             gameManager.SendVibration();
             gameManager.SendVibrationRight();
-         // webSocketClient.SendWebSocketMessage("VIBRATE LEFT:1000");
           
         }
     }

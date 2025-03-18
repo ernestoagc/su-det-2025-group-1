@@ -7,13 +7,13 @@ public class GameManager : MonoBehaviour
 {
     
     public WebSocketClient webSocketClient;
-    public GameObject cubeObstacle;
     private bool showUpCube;
+    public bool isSafePlace = false;
     
     // Start is called before the first frame update
     void Start()
     {
-        showUpCube = false;
+        isSafePlace = false;
         webSocketClient = GameObject.Find("WebSocketManager").GetComponent<WebSocketClient>();
     }
 
@@ -22,26 +22,43 @@ public class GameManager : MonoBehaviour
     {
         
     }
-    
-    public void ShowCube()
+
+    public void MoveToSafeEnvironment()
     {
-        if (!showUpCube)
-        {
-            cubeObstacle.SetActive(true);
-            showUpCube = true;
-        }
-        
+        isSafePlace = true;
+        SceneManager.LoadScene("safety-environment");
     }
+
+    public void AddCube()
+    {
+        float distance = Random.Range(0f, 1.2f);
+        float xPosition = -0.44f +distance;
+        // float xPosition = -1.2f +distance;
+        Vector3 spawnPos = new Vector3(xPosition, 1.3f, 0.369f);
+        
+        //  transform.Rotate(0f, 0f, 0f);
+        //transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            
+       // Instantiate(cubeObstacle, spawnPos,Quaternion.Euler(0f, 0f, 0f));
+    }
+    
     
     public void RestartGame()
     {
-        showUpCube = false;
-        cubeObstacle.SetActive(false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("Calling method ..RestartGame");
+        isSafePlace = false;
+        SceneManager.LoadScene("design-environment");
     }
 
     public void SendVibration()
     {
+        Debug.Log("Calling method ..SendVibration");
         webSocketClient.SendWebSocketMessage("VIBRATE LEFT:1000");
+    }
+    
+    public void SendVibrationRight()
+    {
+        Debug.Log("Calling method ..SendVibrationRight");
+        webSocketClient.SendWebSocketMessage("VIBRATE RIGHT:1000");
     }
 }

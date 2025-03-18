@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: se.su.dsv.extralitylab
-  productName: vr_group1
+  productName: vr_group2
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -140,12 +140,14 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 3.0.0
+  bundleVersion: 3.0.1
   preloadedAssets:
   - {fileID: 11400000, guid: 7e53f8a61e46d6443944068f67bbe78b, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 7860340206977449173, guid: 2772353730acc924ebd0d03563bd1832, type: 2}
+  - {fileID: 11400000, guid: 399e1229a1aa66d44a88464a07af7b3d, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -166,7 +168,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.se.su.dsv.extralitylab.vr_group1
+    Android: com.se.su.dsv.extralitylab.vr_group2
     Standalone: com.Unity-Technologies.com.unity.template.urp-blank
     iPhone: com.Unity-Technologies.com.unity.template.urp-blank
   buildNumber:

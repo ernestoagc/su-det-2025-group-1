@@ -11443,8 +11443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 15
+  maxIntensity: 2
   flickerSpeed: 0.1
 --- !u!108 &571111699
 Light:
@@ -15799,7 +15799,7 @@ MonoBehaviour:
   - {fileID: 1126931448}
   - {fileID: 2113903661}
   - {fileID: 399230225}
-  - {fileID: 1453061088}
+  - {fileID: 953268632}
   - {fileID: 1304168044}
   - {fileID: 929931559}
   - {fileID: 122845878}
@@ -15809,8 +15809,6 @@ MonoBehaviour:
   lights3:
   - {fileID: 1502475313}
   - {fileID: 2113903661}
-  - {fileID: 1239582059}
-  - {fileID: 953268632}
   - {fileID: 929931559}
   - {fileID: 1603546300}
   - {fileID: 571111696}
@@ -18174,8 +18172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 10
+  maxIntensity: 3
   flickerSpeed: 0.1
 --- !u!108 &929931562
 Light:
@@ -18491,8 +18489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 10
+  maxIntensity: 4
   flickerSpeed: 0.1
 --- !u!108 &953268635
 Light:
@@ -23231,8 +23229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 4
+  maxIntensity: 0.5
   flickerSpeed: 0.1
 --- !u!108 &1239582062
 Light:
@@ -28240,8 +28238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 10
+  maxIntensity: 5
   flickerSpeed: 0.1
 --- !u!108 &1502475316
 Light:
@@ -30589,8 +30587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 10
+  maxIntensity: 5
   flickerSpeed: 0.1
 --- !u!108 &1603546303
 Light:
@@ -36809,8 +36807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 15
+  maxIntensity: 2
   flickerSpeed: 0.1
 --- !u!108 &1914856422
 Light:
@@ -37644,8 +37642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 15
+  maxIntensity: 2
   flickerSpeed: 0.1
 --- !u!108 &1932646994
 Light:
@@ -38571,8 +38569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 30
+  maxIntensity: 2
   flickerSpeed: 0.1
 --- !u!108 &1958626342
 Light:
@@ -41941,8 +41939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff20ff1d6ce6c5d42904cb2b2eef829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minIntensity: 0.2
-  maxIntensity: 1.5
+  minIntensity: 5
+  maxIntensity: 100
   flickerSpeed: 0.1
 --- !u!1 &2118506032
 GameObject:

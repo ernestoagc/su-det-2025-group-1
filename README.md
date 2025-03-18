@@ -1,21 +1,18 @@
 <!-- Place this file at the root of your Unity project.
 At the same level than the folders Assets/* -->
 
-# [Name of the project]
+# [Feel The Edge]
 
-_Some examples are shown below but you should expand on each subtitle as much as needed to provide comprehensive information/ **MarkDown** reference is available here: <https://www.markdownguide.org/basic-syntax/>_
-
-Include the name, logo and images refering to your project
-
-![{Your App XR} logo](./docs/example-image.jpg)
+-- Catchy slogan or a logo for the project --
 
 ## Introduction
 
-[Project XR ] is an educational XR experience that lets you explore in 3D [...] . Learn about [...].
+Feel The Edge is an educational VR experience helps the user to deal with different distractions by simulating multiple audio and visual triggers, while the user is in a safe environment.
 
-The problem detected was...
+This experience is focused on people with Anxiety Disorder, and people with sensory hypersensitivity, especially those sensitive to sounds and lights. 
 
-The proposed solution is valuable because...
+The experience is especially valuable to these users, as they will be able to adapt to an environment with multiple audio and light triggers, which is usually very challenging for them. They will be able change threshold level of sound and light and test their limits in an safe environment. 
+When they're about to reach their limit, if they don't reduce the level themselves, they will have possibility to leave the experience by pressing panic button on their chest which will suspend the experience and transport the user to a comforting scene.
 
 ## Design Process
 

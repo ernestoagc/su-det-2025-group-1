@@ -18,8 +18,24 @@ public class SceneManagerScript : MonoBehaviour
     }
 
 
-    public void NavigateToNextScene()
+    public void NavigateToPocGrab()
     {
       SceneManager.LoadScene("poc-grab");
     }
+
+     public void NavigateToPocMenu()
+    {
+      SceneManager.LoadScene("poc-menu");
+    }
+
+    public void NavigateToSafetyEnvironment()
+    {
+      SceneManager.LoadScene("safety-environment");
+    }
+
+   public void NavigateToDesignEnvironment()
+    {
+      SceneManager.LoadScene("design-environment");
+    }
+
 }

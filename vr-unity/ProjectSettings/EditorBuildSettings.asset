@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/poc-grab.unity
     guid: 58c104df62cea8c43aa315696eb462f7
   - enabled: 1
@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/design-environment.unity
     guid: 8dc32ac4af53549b98f9a348e15d13c8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/safety-environment.unity
     guid: e07f7ef38fd994144a6fd2764bf476cd
   - enabled: 0

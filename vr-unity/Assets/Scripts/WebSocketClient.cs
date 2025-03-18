@@ -76,18 +76,15 @@ public class WebSocketClient : MonoBehaviour
         var socketMessage = Encoding.UTF8.GetString(data);
         //Debug.Log(System.Text.Encoding.UTF8.GetString(data));
 
-        if (socketMessage.Contains("EMERGENCY BUTTON PRESSED"))
+        if (socketMessage.Contains("EMERGENCY BUTTON PRESSED") && gameManager.isSafePlace)
         {
-            Debug.Log("====>Presionando boton===!");
+            Debug.Log("====>Presionando boton Emergencia===!");
             
-            gameManager.ShowCube();
+            gameManager.MoveToSafeEnvironment();
         }
         {
-            Debug.Log("OnMessage!");
+         //   Debug.Log("OnMessage!");
 
-            // getting the message as a string
-            // var message = System.Text.Encoding.UTF8.GetString(bytes);
-            // Debug.Log("OnMessage! " + message);
         };
     }
 

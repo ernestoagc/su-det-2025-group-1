@@ -24,11 +24,10 @@ public class DetectCollisions : MonoBehaviour
     {
         Debug.Log("======OnCollisionEnter: "+ other.gameObject.tag);
         
-        SceneManager.LoadScene("safety-environment");
-        // 
-        if (!other.gameObject.CompareTag("Ground"))
-        {  
-         //   gameManager.AddCube();
+        if (other.gameObject.CompareTag("Person"))
+        {   
+            gameManager.SendVibration();
+            gameManager.SendVibrationRight();
          // webSocketClient.SendWebSocketMessage("VIBRATE LEFT:1000");
           
         }

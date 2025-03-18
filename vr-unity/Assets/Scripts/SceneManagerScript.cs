@@ -28,9 +28,14 @@ public class SceneManagerScript : MonoBehaviour
       SceneManager.LoadScene("poc-menu");
     }
 
-    public void NavigateToSafetyEnvironment()
-    {
+   public void NavigateToSafetyEnvironment()
+   {
       SceneManager.LoadScene("safety-environment");
+   }
+
+   public void NavigateToStartupEnvironment()
+    {
+      SceneManager.LoadScene("startup-environment");
     }
 
    public void NavigateToDesignEnvironment()

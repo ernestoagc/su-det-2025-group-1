@@ -14,7 +14,7 @@ public class WalkManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * speed );
+      transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
     }
     
@@ -30,7 +30,7 @@ public class WalkManager : MonoBehaviour
 
     public void ChangeWalkingRotation()
     {
-        transform.Rotate(0 , 50f ,0);
+       transform.Rotate(0 , 50f ,0);
     }
 
 

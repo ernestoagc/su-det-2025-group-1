@@ -18,6 +18,8 @@ public class LightManager : MonoBehaviour
     private bool isLights1On = false;
     private bool isLights2On = false;
     private bool isLights3On = false;
+    
+    private int currentLevel = 0;
 
     void Start()
     {
@@ -40,6 +42,16 @@ public class LightManager : MonoBehaviour
         else if (buttonIndex == 3)
             ToggleLights(lights3, ref isLights3On, lightButton3, lightButton1, lightButton2);
     }
+
+    public void ChangeLightLevel()
+    {
+        if (currentLevel > 3)
+            currentLevel = 0;
+
+        currentLevel++;
+        OnButtonClicked(currentLevel);
+    }
+    
 
     void ToggleLights(GameObject[] lightGroup, ref bool isOn, Button activeButton, Button button1, Button button2)
     {

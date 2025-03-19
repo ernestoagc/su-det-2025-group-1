@@ -40,6 +40,11 @@ public class GameManager : MonoBehaviour
         enableWalk = false;
     }
 
+    public void ChangeWalkMode()
+    {
+        enableWalk = !enableWalk;
+    }
+
 
     public void RestartGame()
     {

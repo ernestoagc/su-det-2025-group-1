@@ -1,6 +1,3 @@
-<!-- Place this file at the root of your Unity project.
-At the same level as the folders Assets/* -->
-
 # Feel The Edge
 
 ## -- Catchy slogan or a logo or poster for the project --

@@ -13,11 +13,14 @@ public class SoundManager : MonoBehaviour
     public Button playSoundButton2;
     public Button playSoundButton3;
 
+    private int currentLevel;
+    
     private bool isPlaying = false;  // Track if any sound is playing
     private Button activeButton = null; // Track currently active button
 
     void Start()
     {
+        currentLevel = 0;
         // Optional: Auto-assign button listeners (useful if not assigned manually in Unity Editor)
         if (playSoundButton1 != null)
         {
@@ -34,6 +37,15 @@ public class SoundManager : MonoBehaviour
             playSoundButton3.onClick.AddListener(() => OnButtonClicked(3));
         }
     }
+    
+    public void ChangeSoundLevel()
+    {
+        if (currentLevel > 3)
+            currentLevel = 0;
+
+        currentLevel++;
+        OnButtonClicked(currentLevel);
+    }
 
     // Public method to assign in the Unity Editor
     public void OnButtonClicked(int level)
@@ -43,6 +55,16 @@ public class SoundManager : MonoBehaviour
         else if (level == 3) ToggleSound(level3, playSoundButton3);
     }
 
+    void ToggleSound(GameObject[] soundGroup, Button clickedButton)
+    {
+        StopAllSounds(); // Stop all sounds before playing the new one
+        PlaySoundGroup(soundGroup);
+        isPlaying = true;
+       // activeButton = clickedButton;
+        //DisableOtherButtons(clickedButton);
+    }
+
+    /*
     void ToggleSound(GameObject[] soundGroup, Button clickedButton)
     {
         if (isPlaying && activeButton == clickedButton) // If the same button is clicked again, turn it off
@@ -61,7 +83,7 @@ public class SoundManager : MonoBehaviour
             DisableOtherButtons(clickedButton);
         }
     }
-
+*/
     void PlaySoundGroup(GameObject[] soundGroup)
     {
         foreach (GameObject obj in soundGroup)

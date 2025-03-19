@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/poc-grab.unity
     guid: 58c104df62cea8c43aa315696eb462f7
   - enabled: 1
-    path: Assets/Scenes/startup-environment.unity
+    path: Assets/Scenes/safety-enrinoment.unity
     guid: b1a1102bfcca25b48ad18ad9d890208d
   - enabled: 1
     path: Assets/Scenes/design-environment.unity

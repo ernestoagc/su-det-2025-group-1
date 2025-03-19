@@ -32,4 +32,16 @@ public class HandMenu : MonoBehaviour
    {
       SceneManager.LoadScene("design-environment");
    }
+
+   public void StartExperience()
+   {
+      StartCoroutine(DelayAction(4));
+   }
+
+   IEnumerator DelayAction(float delayTime)
+   {
+      yield return new WaitForSeconds(delayTime);
+
+      NavigateToDesignEnvironment();
+   }
 }

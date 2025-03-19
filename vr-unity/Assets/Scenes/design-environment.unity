@@ -2287,6 +2287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   webSocketClient: {fileID: 1504920482}
+  enableWalk: 0
   isSafePlace: 0
 --- !u!4 &185031495
 Transform:

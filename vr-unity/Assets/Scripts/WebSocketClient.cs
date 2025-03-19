@@ -74,18 +74,12 @@ public class WebSocketClient : MonoBehaviour
             byte[] data) //Receives webSocket message and handles it respectively depending on what it contains
     {
         var socketMessage = Encoding.UTF8.GetString(data);
-        //Debug.Log(System.Text.Encoding.UTF8.GetString(data));
 
         if (socketMessage.Contains("EMERGENCY BUTTON PRESSED") && !gameManager.isSafePlace)
         {
-            Debug.Log("====>Presionando boton Emergencia===!");
-            
+            Debug.Log("====>Emergency Button");
             gameManager.MoveToSafeEnvironment();
         }
-        {
-         //   Debug.Log("OnMessage!");
-
-        };
     }
 
 

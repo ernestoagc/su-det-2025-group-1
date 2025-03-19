@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     
     public WebSocketClient webSocketClient;
     private bool showUpCube;
+    public bool enableWalk = true;
     public bool isSafePlace = false;
     
     // Start is called before the first frame update
@@ -29,7 +30,17 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("safety-environment");
     }
 
+    public void EnableWalk()
+    {
+        enableWalk = true;
+    }
     
+    public void DisableWalk()
+    {
+        enableWalk = false;
+    }
+
+
     public void RestartGame()
     {
         Debug.Log("Calling method ..RestartGame");

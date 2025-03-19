@@ -45,7 +45,7 @@ public class WalkManager : MonoBehaviour
     {
         speed = 0.5f;
         playerAnim.SetFloat("f_speed", speed);
-        WaitTransitation();
+        //WaitTransitation();
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 
@@ -53,7 +53,7 @@ public class WalkManager : MonoBehaviour
     {
         speed = 0f;
         playerAnim.SetFloat("f_speed", speed);
-        WaitTransitation();
+        //WaitTransitation();
     }
     
     

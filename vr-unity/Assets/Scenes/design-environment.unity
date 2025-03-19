@@ -1931,7 +1931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cbfe71607e6943b5a0ffd1ec2fd65c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  webSocketClient: {fileID: 1504920482}
   enableWalk: 0
   isSafePlace: 0
 --- !u!4 &185031495
@@ -14715,7 +14714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1504920482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21619,6 +21618,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6877516062718923642, guid: e95aaffd8f47a4045ae1543b7416d107,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6992525890477775934, guid: e95aaffd8f47a4045ae1543b7416d107,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -21909,6 +21913,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -137
       objectReference: {fileID: 0}
+    - target: {fileID: 8826443485744648949, guid: e95aaffd8f47a4045ae1543b7416d107,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8839077460027330354, guid: e95aaffd8f47a4045ae1543b7416d107,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -22040,5 +22049,5 @@ SceneRoots:
   - {fileID: 111119592}
   - {fileID: 4821805435875879896}
   - {fileID: 1504920483}
-  - {fileID: 732821448}
   - {fileID: 185031495}
+  - {fileID: 732821448}

@@ -12,13 +12,21 @@ public class WebSocketClient : MonoBehaviour
 
     [SerializeField] private int Port = 3000; //The Port your WebSocket Connection will "talk" to
 
-    private WebSocket webSocket;
+    private WebSocket webSocket; 
+   
+    public static WebSocketClient Instance;
 
-    // Start is called before the first frame update
-    private void Start()
+    private void Awake()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        initWebSocket();
+       if (Instance != null)
+       {
+          Destroy(gameObject);
+          return;
+       }
+       
+       Instance = this;
+       DontDestroyOnLoad(gameObject);
+       initWebSocket();
     }
 
     // Update is called once per frame
@@ -74,12 +82,20 @@ public class WebSocketClient : MonoBehaviour
             byte[] data) //Receives webSocket message and handles it respectively depending on what it contains
     {
         var socketMessage = Encoding.UTF8.GetString(data);
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
-        if (socketMessage.Contains("EMERGENCY BUTTON PRESSED") && !gameManager.isSafePlace)
+        if (socketMessage.Contains("EMERGENCY BUTTON PRESSED"))
         {
-            Debug.Log("====>Emergency Button");
-            gameManager.MoveToSafeEnvironment();
-        }
+            if (gameManager.isStartEnvironment)
+            {
+                Debug.Log("====>Emergency Button in Startup");
+                gameManager.ContinueInStartEnvironment();
+            } else if(!gameManager.isSafePlace)
+            {
+                Debug.Log("====>Emergency Button");
+                gameManager.MoveToSafeEnvironment();
+            }
+      }
     }
 
 

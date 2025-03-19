@@ -3,7 +3,7 @@ At the same level than the folders Assets/* -->
 
 # [Feel The Edge]
 
--- Catchy slogan or a logo for the project --
+-- Catchy slogan or a logo or poster for the project --
 
 ## Introduction
 
@@ -11,12 +11,45 @@ Feel The Edge is an educational VR experience helps the user to deal with differ
 
 This experience is focused on people with Anxiety Disorder, and people with sensory hypersensitivity, especially those sensitive to sounds and lights. 
 
-The experience is especially valuable to these users, as they will be able to adapt to an environment with multiple audio and light triggers, which is usually very challenging for them. They will be able change threshold level of sound and light and test their limits in an safe environment. 
-When they're about to reach their limit, if they don't reduce the level themselves, they will have possibility to leave the experience by pressing panic button on their chest which will suspend the experience and transport the user to a comforting scene.
+The experience is especially valuable to these users, as they will be able to adapt to an environment with multiple audio and light triggers, which is usually very challenging for them. All of these triggers will be done in a safe environment.
+
+When the users feel uncomfortable, or reach their limit, they can change the level of distractions or possibility to stop the experience by pressing the panic button attached to their chest which will suspend the experience and transport the user to a comforting scene.
 
 ## Design Process
 
 [_Add evidence on the general overview of how you planned, designed, and developed your project, including the goals, challenges, and solutions._]
+
+The Design Process started with brainstorming session, where each of us tried to think of as many problems, ideas, and solutions as possible; covering different disabilities, and solutions that could be completed within given timeframe.
+
+-- SCREENSHOT MIRO BOARD--
+
+After, each of us choose to present one idea to the classroom, and receive feedback on which option is most logical to go with.
+
+-- SCREENSHOT PRESENTATION --
+
+Once the project idea was decided on, the team had discussion about the project purpose, and what the experience will be about. The discussion helped build Design Document with timeline for each week.
+
+-- PICTURE WHITEBOARD --
+
+###Persona
+To better understand people with sensory hypersensitivity, the team browsed throughout articles to find which challenges our target group faces in everyday life, how do they feel about it, and how do they deal with it. The persona is created from the information gathered, with a goal to address their needs and pain points, and to be able to make decisions and solutions based on imaginary person.
+
+--PERSONA--
+--PAIN POINTS--
+--USER JOURNEY?--
+
+After this process, the team was able to highlight the problems and think of the solution and how the whole experience would look like. The solution is experience that will help the user to practise their stability while being distracted with the objects and sounds that usually make them feel anxious. 
+The team thought of having a Safe Space, and Environment where the users can manipulate with different options and find or increase their threshold level. 
+
+### Classroom
+This would be done by using the menu, where the user could activate different disturbing sounds, trigger lights that flicker, and control people in the room and their movement. These are the challenges that are found to be the most problematic for this type of disability. 
+
+### Safe Space
+Room where they chill
+
+### Emergency Button and tactile feedback
+
+For the safety measurements, the users have option to enter the safety space with a button on their chest, and an option to control the tactile feedback the user gets after the people come near the person.
 
 For example:
 - Brainstorming: A screenshot of the whiteboard or post-it notes used to land the project's idea.

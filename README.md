@@ -1,121 +1,144 @@
 <!-- Place this file at the root of your Unity project.
-At the same level than the folders Assets/* -->
+At the same level as the folders Assets/* -->
 
-# [Feel The Edge]
+# Feel The Edge
 
--- Catchy slogan or a logo or poster for the project --
+## -- Catchy slogan or a logo or poster for the project --
+**-- POSTER? --**
+
+---
 
 ## Introduction
 
-Feel The Edge is an educational VR experience helps the user to deal with different distractions by simulating multiple audio and visual triggers, while the user is in a safe environment.
+Feel The Edge is an educational VR experience designed to help users deal with different distractions by simulating multiple audio and visual triggers, all while they are in a safe environment.
 
-This experience is focused on people with Anxiety Disorder, and people with sensory hypersensitivity, especially those sensitive to sounds and lights. 
+This experience focuses on people with **Anxiety Disorder** and **sensory hypersensitivity**, especially those sensitive to sounds and lights.
 
-The experience is especially valuable to these users, as they will be able to adapt to an environment with multiple audio and light triggers, which is usually very challenging for them. All of these triggers will be done in a safe environment.
+The experience is especially valuable to these users, as they can adapt to an environment filled with multiple audio and light triggers, which are usually very challenging for them. All of these triggers are introduced in a **safe environment**.
 
-When the users feel uncomfortable, or reach their limit, they can change the level of distractions or possibility to stop the experience by pressing the panic button attached to their chest which will suspend the experience and transport the user to a comforting scene.
+When users feel uncomfortable or reach their limit, they can change the level of distractions or stop the experience by pressing the **panic button** attached to their chest, which will suspend the experience and transport them to a comforting scene.
+
+---
 
 ## Design Process
 
-[_Add evidence on the general overview of how you planned, designed, and developed your project, including the goals, challenges, and solutions._]
+The Design Process started with a **brainstorming session**, where each of us tried to think of as many problems, ideas, and solutions as possible, covering various disabilities, and solutions that could be completed within the given timeframe.
 
-The Design Process started with brainstorming session, where each of us tried to think of as many problems, ideas, and solutions as possible; covering different disabilities, and solutions that could be completed within given timeframe.
+![Brainstorming](vr-unity/readme/brainstorm.png)
 
--- SCREENSHOT MIRO BOARD--
+Afterward, each team member presented one idea to the classroom and received feedback on which option was the most logical to proceed with.
 
-After, each of us choose to present one idea to the classroom, and receive feedback on which option is most logical to go with.
+![Sketch](vr-unity/readme/sketch.png)
 
--- SCREENSHOT PRESENTATION --
+Once the project idea was decided, the team discussed the project purpose and the experience itself. This discussion helped build the **Design Document**, which included a timeline for each week.
 
-Once the project idea was decided on, the team had discussion about the project purpose, and what the experience will be about. The discussion helped build Design Document with timeline for each week.
+![Whiteboard Discussion](vr-unity/readme/whiteboard.jpg)
 
--- PICTURE WHITEBOARD --
+---
 
-###Persona
-To better understand people with sensory hypersensitivity, the team browsed throughout articles to find which challenges our target group faces in everyday life, how do they feel about it, and how do they deal with it. The persona is created from the information gathered, with a goal to address their needs and pain points, and to be able to make decisions and solutions based on imaginary person.
+### Persona
 
---PERSONA--
---PAIN POINTS--
---USER JOURNEY?--
+To better understand people with sensory hypersensitivity, the team browsed through articles to learn about the challenges our target group faces in everyday life, how they feel about it, and how they cope with it. 
 
-After this process, the team was able to highlight the problems and think of the solution and how the whole experience would look like. The solution is experience that will help the user to practise their stability while being distracted with the objects and sounds that usually make them feel anxious. 
-The team thought of having a Safe Space, and Environment where the users can manipulate with different options and find or increase their threshold level. 
+The **persona** was created from the information gathered, with the goal of addressing their needs and pain points, and making decisions and solutions based on an imaginary person.
+
+**-- PERSONA --**
+**-- PAIN POINTS --**
+**-- USER JOURNEY? --**
+
+After this process, the team identified key problems and developed solutions for how the whole experience would look. The solution is an experience designed to help users practice their stability while being distracted by objects and sounds that typically cause anxiety.
+
+The team envisioned a **Safe Space** and Environment where users can manipulate different options and find or increase their threshold level.
+
+---
 
 ### Classroom
-This would be done by using the menu, where the user could activate different disturbing sounds, trigger lights that flicker, and control people in the room and their movement. These are the challenges that are found to be the most problematic for this type of disability. 
 
-### Safe Space
-Room where they chill
+This would be achieved by using a menu where the user could activate disturbing sounds, trigger lights that flicker, and control the people in the room and their movement—challenges identified as particularly problematic for these individuals.
 
-### Emergency Button and tactile feedback
+![Classroom](vr-unity/readme/classroom_scene.jpg)
 
-For the safety measurements, the users have option to enter the safety space with a button on their chest, and an option to control the tactile feedback the user gets after the people come near the person.
+---
 
-For example:
-- Brainstorming: A screenshot of the whiteboard or post-it notes used to land the project's idea.
-- User Research: Pictures and summary of how you conducted user research, such as surveys, interviews, or observations, and what insights you gained from it.
-- User Persona: A description of your target user, their needs, motivations, and pain points, and how your project addresses them.
-- User Journey: A visualization of how your user interacts with your project, from the initial trigger to the final outcome, and what emotions they experience along the way.
-- Wireframes and Prototypes: A collection of sketches, mockups, or prototypes that show the layout, structure, and functionality of your project, and how you tested and iterated on them.
+### Safe Space, Emergency Button, Tactile Feedback
 
+For safety, the safe space environment is where users enter once they press the **emergency button** attached to their chest. 
 
-## System description
+Users also have the option to control the **tactile feedback** they receive on their shoulders when someone approaches them in VR.
+
+![Tshirt](vr-unity/readme/tshirt.jpg)
+
+---
+
+### User Testing
+
+The demo version of the experience was presented and tested by several people, providing us valuable feedback to improve the experience. Based on this feedback, we adjusted our presentation of how the experience would look, as well as made minor changes to gameplay and UI elements (such as the Menu) to make the experience smoother for users.
+
+---
+
+## System Description
 
 ### Features
 
-[_Features and functionalities of your project. You can use bullet points, screenshots, gifs, or videos to illustrate your points. Also include a link to a demo or a live version of your project._]
+Feel The Edge includes the following features:
 
-For example:
+- A **virtual classroom environment** where users can control their surroundings, such as adjusting the level of sound, light flickering, and controlling people’s movements.
+- An **easily accessible emergency button** that leads users to the Safe Space if they feel uncomfortable and wish to stop the experience.
+- **Simulation of people walking near you**, where vibration motors activate when people walk close to you.
 
-- Immersive and realistic 3D models of [...]
-- Interactive and intuitive controls using hand gestures and voice commands
-- Customizable settings and preferences for the user experience
-- Compatible with various XR platforms and devices
+---
 
-Watch the demo video or try the live version.
+#### Watch the DEMO VIDEO or try out the live version by [this GitHub Repository](https://github.com/ernestoagc/su-det-2025-group-1)
 
-Link: <https://extralitylab.dsv.su.se/>
+---
 
 ## Installation
+#### This can be inspiration how this part should look - https://gitea.dsv.su.se/ExtralityLab/DET24-AtomCraft
+To install and run Feel The Edge on your platform or device, follow the instructions below:
 
-[_Installation process to build and run your project. Use code blocks, tables, or lists to show the commands, steps, or requirements the chosen platform. Mention any dependencies or libraries that your project uses and how to install them._]
-
-To install and run [Your app] on your platform or device, follow the instructions below:
-
-| Platform | Device | Requirements | Commands |
-| -------- | ------ | ------------ | -------- |
-| Windows  | Meta Quest   | Unity 2022.3 or higher, Arduino | `git clone https://github.com/user/repo.git`<br>`cd project-xr`<br>`open MainScene.unity`<br>`Build and Run` |
-| Android  | Phone  | Android 19 or higher, ARCore 1.18 or higher | `git clone https://github.com/user/repo.git`<br>`cd solar-system-xr`<br>`open SolarSystemXR.unity`<br>`switch platform to Android`<br>`build and run` |
+| **Platform** | **Device**     | **Requirements**                               | **Commands**                                                                 |
+|--------------|----------------|------------------------------------------------|-----------------------------------------------------------------------------|
+| Windows      | Meta Quest     | Unity 2022.3 or higher, Arduino               | `git clone https://github.com/user/repo.git`<br>`cd project-xr`<br>`open MainScene.unity`<br>`Build and Run` |
+| Android      | Phone          | Android 19 or higher, ARCore 1.18 or higher   | `git clone https://github.com/user/repo.git`<br>`cd solar-system-xr`<br>`open SolarSystemXR.unity`<br>`switch platform to Android`<br>`build and run` |
 
 You also need to install the following dependencies or libraries for your project:
 
-- Library A - a Unity plugin for building VR and AR experiences
-- Library B - a C# wrapper for speech recognition and synthesis
+- **Library A** – a Unity plugin for building VR and AR experiences
+- **Library B** – a C# wrapper for speech recognition and synthesis
+
+---
 
 ## Usage
 
-[_Usage section showing how to use your project and interact with its features. You can use examples, screenshots, gifs, or videos to demonstrate the user interface, controls, and feedback of your project. You can also provide tips, tricks, or best practices for using your project effectively._]
+To use Feel The Edge and interact with its features, follow the guidelines below:
 
-To use [Your App XR} and interact with its features, follow the guidelines below:
+1. The game is stationary and uses hand tracking. Get yourself comfortable, preferably sitting.
+2. Open Feel The Edge on your VR headset.
+3. Read the instructions and press the Start button using the poke gesture.
+4. Once in the Classroom, start the experience by clicking the buttons on your left hand. These buttons will change the environment around you.
+5. Listen and look at what's happening around you, and try to increase the level of distractions once you feel comfortable with the current level.
+6. If you feel uncomfortable or wish to stop the experience, press the button on your chest to be transported to the Safe Space.
 
-- To move around, use the touchpad or the joystick on your controller, or swipe on your phone screen.
-- To select ...a planet or a moon, point at it with your controller or your phone, or gaze at it with your headset.
-- To zoom in or out, use the trigger or the button on your controller, or pinch on your phone screen.
-- To access the information panel, press...
-- To use voice commands, say "OK" followed by one of the following phrases:
-  - "Show me [X]" - to show X element
-  - "Close window Y" - to close window Y
-  
-Some tips, tricks, and best practices for using [Your App XR} effectively:
-
-- Tip 1
-- Tip 2
-
+---
 
 ## References
 
 Acknowledge here the sources, references, or inspirations that you used for your project. Give credit to the original authors or creators of the materials that you used or adapted for your project (3D models, source code, audio effects, etc.)
 
+---
+
 ## Contributors
 
-The authors of the project, contact information, and links to their websites or portfolios.
+Evgeniia Dolgikh  
+
+
+Antonio Jerkovic  
+anje7074@student.su.se  
+[Linkedin](https://www.linkedin.com/in/antonio00232/)
+
+
+
+Ernesto Galarza  
+
+Florian Unger  
+flun4103@student.su.se

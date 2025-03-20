@@ -98,7 +98,7 @@ Feel The Edge includes the following features:
 - Stationary Environment was decided on in order to reduce risk of motion sickness and because enabling movement provides no benefit to the experience at the moment with current version.
 - Button on chest was chosen to provide an intuitive tap out button, which can be a faster way to exit the experience when people get nervous.
 - Menu panel - The menu was initially put in front of the user, and they could activate by poking the left hand. Two problems occurred during testing, one that the users would spend most of the experience with menu activated, that would cover most of the screen and ruin the experience. Another one was having difficulties to pinch effectively, without spending a lot of time on it. This becomes a problem, especially when people start to panic.
-- Poke - this decision was chosen after user testing, poking feels more natural and it is easier interaction for unexperienced people. Pinch was another method that was tested and used at the beginning. Removing pinch and changing it to poke also makes more sense as the participants get used to poke method before the experience starts, and having the same method throughout whole experience ensures that the users are quick and comfortable.
+- Poke - this decision was chosen after user testing, poking feels more natural and it is easier interaction for unexperienced people. Pinch was another interaction that was tested and used at the beginning. Removing pinch and changing it to poke also makes more sense as the participants get used to poke interaction before the experience starts, and having the same interaction throughout whole experience ensures that the users are quick and comfortable.
 
 ---
 
@@ -215,8 +215,10 @@ Antonio Jerkovic
 anje7074@student.su.se  
 [Linkedin](https://www.linkedin.com/in/antonio00232/)
 
-Ernesto Galarza
+Ernesto Galarza  
+erga4586@student.su.se  
+[Linkedin](https://www.linkedin.com/in/ernestoagc/)  
 
 Florian Unger  
-flun4103@student.su.se
-[Linkedin](https://www.linkedin.com/in/florian-unger-ab943a17b/)
+flun4103@student.su.se  
+[Linkedin](https://www.linkedin.com/in/florian-unger-ab943a17b/)  

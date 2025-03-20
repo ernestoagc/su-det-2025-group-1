@@ -120,7 +120,24 @@ To use Feel The Edge and interact with its features, follow the guidelines below
 
 ## References
 
-Acknowledge here the sources, references, or inspirations that you used for your project. Give credit to the original authors or creators of the materials that you used or adapted for your project (3D models, source code, audio effects, etc.)
+Sounds:
+https://freesound.org/s/144904/
+https://freesound.org/s/232175/
+https://freesound.org/s/43365/
+https://freesound.org/s/546033/
+https://freesound.org/s/766202/
+https://freesound.org/s/149468/
+https://freesound.org/s/610761/
+https://freesound.org/s/580685/
+https://freesound.org/s/506759/
+https://freesound.org/s/219220/
+https://freesound.org/s/377003/
+
+3D Assets:
+https://assetstore.unity.com/packages/3d/props/interior/bedroom-interior-low-poly-assets-295074
+https://assetstore.unity.com/packages/3d/environments/school-assets-146253
+https://assetstore.unity.com/packages/3d/characters/city-people-free-samples-260446
+
 
 ---
 
@@ -128,6 +145,7 @@ Acknowledge here the sources, references, or inspirations that you used for your
 
 Evgeniia Dolgikh  
 evdo4579@student.su.se
+
 [Linkedin](https://www.linkedin.com/in/evgeniiadolgikh/)
 
 Antonio Jerkovic  

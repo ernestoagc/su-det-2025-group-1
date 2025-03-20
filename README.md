@@ -118,7 +118,12 @@ The tactile vest used to enable the users to intuitively tap out of the experien
 - The vibration motors are put on the inside of the arm pieces where they can be fixed to the arm using velcro straps.
 - The ESP32 with the breadboard and wiring is set inside a pouch made out of textile on the T-Shirt.
 - To allow modularity the vibration sensors and the capacitive touch sensor are detachable via connectors.
+
+  <img src="vr-unity/readme/connectors.jpg" width="200" height="200" />
+
 - For the intuitive tap out button the capacitive touch sensor is mounted on a soft plastic which is glued onto the T-Shirt.
+
+![T-Shirt laid out](vr-unity/readme/TShirt_laidout.jpg)
 
 #### Components
 
@@ -136,6 +141,8 @@ The tactile vest used to enable the users to intuitively tap out of the experien
 #### Wiring/Schematics
 
 ![Schematics](vr-unity/readme/schematics_vest.png)
+
+![Picture of Wiring](vr-unity/readme/esp32.jpg)
 
 ### Software
 

@@ -127,13 +127,12 @@ Acknowledge here the sources, references, or inspirations that you used for your
 ## Contributors
 
 Evgeniia Dolgikh  
-
+evdo4579@student.su.se
+[Linkedin](https://www.linkedin.com/in/evgeniiadolgikh/)
 
 Antonio Jerkovic  
 anje7074@student.su.se  
 [Linkedin](https://www.linkedin.com/in/antonio00232/)
-
-
 
 Ernesto Galarza  
 

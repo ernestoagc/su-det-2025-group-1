@@ -70,7 +70,7 @@ For safety, the safe space environment is where users enter once they press the 
 
 Users also have the option to control the **tactile feedback** they receive on their shoulders when someone approaches them in VR.
 
-![Tshirt](vr-unity/readme/tshirt.jpg)
+![Tshirt](vr-unity/readme/vestonbody.png)
 
 ---
 

@@ -36,6 +36,12 @@ public class HandMenu : MonoBehaviour
       lightManager.ChangeLightLevel();
       txtWalk.text= lightManager.currentLevel.ToString();
    }
+   
+   public void ChangeSoundMode()
+   {
+      soundManager.ChangeSoundLevel();
+      txtWalk.text= soundManager.currentLevel.ToString();
+   }
 
    public void TogglePause()
    {

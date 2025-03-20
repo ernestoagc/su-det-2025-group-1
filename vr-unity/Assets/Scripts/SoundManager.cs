@@ -13,7 +13,7 @@ public class SoundManager : MonoBehaviour
     public Button playSoundButton2;
     public Button playSoundButton3;
 
-    private int currentLevel;
+    public int currentLevel=0;
     
     private bool isPlaying = false;  // Track if any sound is playing
     private Button activeButton = null; // Track currently active button
@@ -40,11 +40,30 @@ public class SoundManager : MonoBehaviour
     
     public void ChangeSoundLevel()
     {
-        if (currentLevel > 3)
-            currentLevel = 0;
-
         currentLevel++;
-        OnButtonClicked(currentLevel);
+        TurnOnSound(currentLevel);
+    }
+    
+    private void TurnOnSound(int level)
+    {
+        StopAllSounds();
+        switch(level) 
+        {
+            case 1:
+                PlaySoundGroup(level1);
+                break;
+            case 2:
+                PlaySoundGroup(level2);
+                break;
+            case 3:
+                PlaySoundGroup(level3);
+                break;
+            default:
+                StopAllSounds();
+                currentLevel = 0;
+                break;
+        }
+        
     }
 
     // Public method to assign in the Unity Editor

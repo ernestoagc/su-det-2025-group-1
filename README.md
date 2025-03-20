@@ -37,11 +37,19 @@ Once the project idea was decided, the team discussed the project purpose and th
 
 To better understand people with sensory hypersensitivity, the team browsed through articles to learn about the challenges our target group faces in everyday life, how they feel about it, and how they cope with it. 
 
-The **persona** was created from the information gathered, with the goal of addressing their needs and pain points, and making decisions and solutions based on an imaginary person.
+From that, two **personas** were created from the information gathered, with the goal of addressing their needs and pain points, and making decisions and solutions based on an person who fits the target group.
 
-**-- PERSONA --**
-**-- PAIN POINTS --**
-**-- USER JOURNEY? --**
+#### John - Persona and User Journey Map
+
+![John Persona](vr-unity/readme/JohnPersona.png)
+![John User Journey Map](vr-unity/readme/JohnJourney.png)
+
+
+#### Emma - Persona and User Journey Map
+
+![Emma Persona](vr-unity/readme/EmmaPersona.png)
+![Emma User Journey Map](vr-unity/readme/EmmaJourney.png)
+
 
 After this process, the team identified key problems and developed solutions for how the whole experience would look. The solution is an experience designed to help users practice their stability while being distracted by objects and sounds that typically cause anxiety.
 
@@ -82,6 +90,16 @@ Feel The Edge includes the following features:
 - A **virtual classroom environment** where users can control their surroundings, such as adjusting the level of sound, light flickering, and controlling people’s movements.
 - An **easily accessible emergency button** that leads users to the Safe Space if they feel uncomfortable and wish to stop the experience.
 - **Simulation of people walking near you**, where vibration motors activate when people walk close to you.
+
+---
+
+### Features Decisions
+
+- Hand tracking was chosen over Controllers in order to simplify it for inexperienced users and to make it feel more natural. 
+- Stationary Environment was decided on in order to reduce risk of motion sickness and because enabling movement provides no benefit to the experience at the moment with current version. 
+- Button on chest was chosen to provide an intuitive tap out button, which can be a faster way to exit the experience when people get nervous. 
+- Menu panel - The menu was initially put in front of the user, and they could activate by poking the left hand. Two problems occurred during testing, one that the users would spend most of the experience with menu activated, that would cover most of the screen and ruin the experience. Another one was having difficulties to pinch effectively, without spending a lot of time on it. This becomes a problem, especially when people start to panic.
+- Poke - this decision was chosen after user testing, poking feels more natural and it is easier interaction for unexperienced people. Pinch was another method that was tested and used at the beginning. Removing pinch and changing it to poke also makes more sense as the participants get used to poke method before the experience starts, and having the same method throughout whole experience ensures that the users are quick and comfortable.
 
 ---
 
@@ -144,8 +162,7 @@ https://assetstore.unity.com/packages/3d/characters/city-people-free-samples-260
 ## Contributors
 
 Evgeniia Dolgikh  
-evdo4579@student.su.se
-
+evdo4579@student.su.se  
 [Linkedin](https://www.linkedin.com/in/evgeniiadolgikh/)
 
 Antonio Jerkovic  
@@ -155,4 +172,6 @@ anje7074@student.su.se
 Ernesto Galarza  
 
 Florian Unger  
+[Linkedin](https://www.linkedin.com/in/florian-unger-ab943a17b/)
 flun4103@student.su.se
+florian.a.unger@gmail.com

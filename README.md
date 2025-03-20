@@ -170,8 +170,9 @@ anje7074@student.su.se
 [Linkedin](https://www.linkedin.com/in/antonio00232/)
 
 Ernesto Galarza  
+erga4586@student.su.se  
+[Linkedin](https://www.linkedin.com/in/ernestoagc/)  
 
 Florian Unger  
-[Linkedin](https://www.linkedin.com/in/florian-unger-ab943a17b/)
-flun4103@student.su.se
-florian.a.unger@gmail.com
+flun4103@student.su.se  
+[Linkedin](https://www.linkedin.com/in/florian-unger-ab943a17b/)  

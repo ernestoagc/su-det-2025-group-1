@@ -44,6 +44,11 @@ public class GameManager : MonoBehaviour
     {
         enableWalk = !enableWalk;
     }
+    
+    public void ChangeLightModeManager()
+    {
+        enableWalk = !enableWalk;
+    }
 
 
     public void RestartGame()

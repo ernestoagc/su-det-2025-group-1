@@ -7,6 +7,7 @@ public class WalkManager : MonoBehaviour
     public float speed = 0.5f;
     private Animator playerAnim;
     private GameManager gameManager;
+    private bool enableWalk;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +50,12 @@ public class WalkManager : MonoBehaviour
     }
 
     public void StopWalking()
+    {
+        speed = 0f;
+        playerAnim.SetFloat("f_speed", speed);
+    }
+    
+    public void ChangeWalkingMode()
     {
         speed = 0f;
         playerAnim.SetFloat("f_speed", speed);

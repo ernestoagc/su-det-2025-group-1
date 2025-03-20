@@ -146,9 +146,33 @@ The tactile vest used to enable the users to intuitively tap out of the experien
 
 ### Software
 
-ERNESTO HERE
+ **1. Setting Up Unity Hub** 
+Download and install Unity Hub from [official page](https://unity.com/download)
 
-#### This can be inspiration how this part should look - https://gitea.dsv.su.se/ExtralityLab/DET24-AtomCraft
+**2. Installing Unity Editor and Required Modules**
+In Unity Hub, go to the 'Installs' tab and click on the 'Add' button to install a new version of the Unity Editor. Select Unity Editor LTS version 2022.3.56f1
+Also, during the installation setup, you should select the following options: 
+- Microsoft Visual Studio IDE (for code editing). 
+- Android Build Support 
+
+![unityhub](vr-unity/readme/unity-installation.png)
+
+**3) Configuring  Unity Project**
+**a. Import the Meta XR SDK:**
+- Navigate to Window > Package Manager.
+- Click the '+' icon and select 'Add package by name'.
+- Enter 'com.meta.xr.sdk.all' and click 'Add'. Restart Unity if prompted.
+
+![meta-library](vr-unity/readme/unity-import-sdk.png)
+
+
+**b. Build Setting Configuration:**
+ - Go to File > Build Settings 
+ - select 'Android' as the target platform. 
+ - Click 'Switch Platform' to confirm.
+ - On Scenes in Build add: startup-environment, design-environment and safety-environment 
+
+![setting-build](vr-unity/readme/unity-build-setting.png)
 
 To install and run Feel The Edge on your platform or device, follow the instructions below:
 

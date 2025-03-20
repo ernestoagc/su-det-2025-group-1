@@ -1,6 +1,7 @@
 # Feel The Edge
 
 ## -- Catchy slogan or a logo or poster for the project --
+
 **-- POSTER? --**
 
 ---
@@ -35,7 +36,7 @@ Once the project idea was decided, the team discussed the project purpose and th
 
 ### Persona
 
-To better understand people with sensory hypersensitivity, the team browsed through articles to learn about the challenges our target group faces in everyday life, how they feel about it, and how they cope with it. 
+To better understand people with sensory hypersensitivity, the team browsed through articles to learn about the challenges our target group faces in everyday life, how they feel about it, and how they cope with it.
 
 From that, two **personas** were created from the information gathered, with the goal of addressing their needs and pain points, and making decisions and solutions based on an person who fits the target group.
 
@@ -44,12 +45,10 @@ From that, two **personas** were created from the information gathered, with the
 ![John Persona](vr-unity/readme/JohnPersona.png)
 ![John User Journey Map](vr-unity/readme/JohnJourney.png)
 
-
 #### Emma - Persona and User Journey Map
 
 ![Emma Persona](vr-unity/readme/EmmaPersona.png)
 ![Emma User Journey Map](vr-unity/readme/EmmaJourney.png)
-
 
 After this process, the team identified key problems and developed solutions for how the whole experience would look. The solution is an experience designed to help users practice their stability while being distracted by objects and sounds that typically cause anxiety.
 
@@ -67,7 +66,7 @@ This would be achieved by using a menu where the user could activate disturbing 
 
 ### Safe Space, Emergency Button, Tactile Feedback
 
-For safety, the safe space environment is where users enter once they press the **emergency button** attached to their chest. 
+For safety, the safe space environment is where users enter once they press the **emergency button** attached to their chest.
 
 Users also have the option to control the **tactile feedback** they receive on their shoulders when someone approaches them in VR.
 
@@ -88,16 +87,16 @@ The demo version of the experience was presented and tested by several people, p
 Feel The Edge includes the following features:
 
 - A **virtual classroom environment** where users can control their surroundings, such as adjusting the level of sound, light flickering, and controlling people’s movements.
-- An **easily accessible emergency button** that leads users to the Safe Space if they feel uncomfortable and wish to stop the experience.
+- An **easily accessible intuitive emergency button** that leads users to the Safe Space if they feel uncomfortable and wish to stop the experience.
 - **Simulation of people walking near you**, where vibration motors activate when people walk close to you.
 
 ---
 
 ### Features Decisions
 
-- Hand tracking was chosen over Controllers in order to simplify it for inexperienced users and to make it feel more natural. 
-- Stationary Environment was decided on in order to reduce risk of motion sickness and because enabling movement provides no benefit to the experience at the moment with current version. 
-- Button on chest was chosen to provide an intuitive tap out button, which can be a faster way to exit the experience when people get nervous. 
+- Hand tracking was chosen over Controllers in order to simplify it for inexperienced users and to make it feel more natural.
+- Stationary Environment was decided on in order to reduce risk of motion sickness and because enabling movement provides no benefit to the experience at the moment with current version.
+- Button on chest was chosen to provide an intuitive tap out button, which can be a faster way to exit the experience when people get nervous.
 - Menu panel - The menu was initially put in front of the user, and they could activate by poking the left hand. Two problems occurred during testing, one that the users would spend most of the experience with menu activated, that would cover most of the screen and ruin the experience. Another one was having difficulties to pinch effectively, without spending a lot of time on it. This becomes a problem, especially when people start to panic.
 - Poke - this decision was chosen after user testing, poking feels more natural and it is easier interaction for unexperienced people. Pinch was another method that was tested and used at the beginning. Removing pinch and changing it to poke also makes more sense as the participants get used to poke method before the experience starts, and having the same method throughout whole experience ensures that the users are quick and comfortable.
 
@@ -108,13 +107,23 @@ Feel The Edge includes the following features:
 ---
 
 ## Installation
+
+### IOT Vest
+
+asdf
+
+### Software
+
+ERNESTO HERE
+
 #### This can be inspiration how this part should look - https://gitea.dsv.su.se/ExtralityLab/DET24-AtomCraft
+
 To install and run Feel The Edge on your platform or device, follow the instructions below:
 
-| **Platform** | **Device**     | **Requirements**                               | **Commands**                                                                 |
-|--------------|----------------|------------------------------------------------|-----------------------------------------------------------------------------|
-| Windows      | Meta Quest     | Unity 2022.3 or higher, Arduino               | `git clone https://github.com/user/repo.git`<br>`cd project-xr`<br>`open MainScene.unity`<br>`Build and Run` |
-| Android      | Phone          | Android 19 or higher, ARCore 1.18 or higher   | `git clone https://github.com/user/repo.git`<br>`cd solar-system-xr`<br>`open SolarSystemXR.unity`<br>`switch platform to Android`<br>`build and run` |
+| **Platform** | **Device** | **Requirements**                            | **Commands**                                                                                                                                          |
+| ------------ | ---------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Windows      | Meta Quest | Unity 2022.3 or higher, Arduino             | `git clone https://github.com/user/repo.git`<br>`cd project-xr`<br>`open MainScene.unity`<br>`Build and Run`                                          |
+| Android      | Phone      | Android 19 or higher, ARCore 1.18 or higher | `git clone https://github.com/user/repo.git`<br>`cd solar-system-xr`<br>`open SolarSystemXR.unity`<br>`switch platform to Android`<br>`build and run` |
 
 You also need to install the following dependencies or libraries for your project:
 
@@ -156,7 +165,6 @@ https://assetstore.unity.com/packages/3d/props/interior/bedroom-interior-low-pol
 https://assetstore.unity.com/packages/3d/environments/school-assets-146253
 https://assetstore.unity.com/packages/3d/characters/city-people-free-samples-260446
 
-
 ---
 
 ## Contributors
@@ -169,7 +177,7 @@ Antonio Jerkovic
 anje7074@student.su.se  
 [Linkedin](https://www.linkedin.com/in/antonio00232/)
 
-Ernesto Galarza  
+Ernesto Galarza
 
 Florian Unger  
 [Linkedin](https://www.linkedin.com/in/florian-unger-ab943a17b/)

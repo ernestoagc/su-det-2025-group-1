@@ -6,19 +6,17 @@ public class WalkManager : MonoBehaviour
 {
     public float speed = 0.5f;
     private Animator playerAnim;
-    private GameManager gameManager;
     private bool enableWalk;
     // Start is called before the first frame update
     void Start()
     {
         playerAnim = GetComponent<Animator>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gameManager.enableWalk)
+        if (GameManager.Instance.enableWalk)
         {
             StartWalking();
         }

@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class HandMenu : MonoBehaviour
 {
    private bool isPaused;
-   private GameManager gameManager;
    private LightManager lightManager;
    private SoundManager soundManager;
    public TextMeshProUGUI txtWalk;
@@ -15,7 +14,6 @@ public class HandMenu : MonoBehaviour
    // Start is called before the first frame update
    void Start()
    {
-      gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
       lightManager = GameObject.Find("LightManager").GetComponent<LightManager>();
       soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
    }
@@ -28,19 +26,19 @@ public class HandMenu : MonoBehaviour
 
    public void ChangeWalkMode()
    {
-      gameManager.ChangeWalkMode();
-      txtWalk.text= gameManager.enableWalk ? "1" : "0";
+      GameManager.Instance.ChangeWalkMode();
+      txtWalk.text= GameManager.Instance.enableWalk ? "1" : "0";
    }
    public void ChangeLightMode()
    {
       lightManager.ChangeLightLevel();
-      txtWalk.text= lightManager.currentLevel.ToString();
+      txtWalk.text = lightManager.currentLevel.ToString();
    }
    
    public void ChangeSoundMode()
    {
       soundManager.ChangeSoundLevel();
-      txtWalk.text= soundManager.currentLevel.ToString();
+      txtWalk.text = soundManager.currentLevel.ToString();
    }
 
    public void TogglePause()
@@ -55,6 +53,7 @@ public class HandMenu : MonoBehaviour
    public void NavigateToDesignEnvironment()
    {
       SceneManager.LoadScene("design-environment");
+      GameManager.Instance.isSafePlace = false;
    }
 
    public void StartExperience()

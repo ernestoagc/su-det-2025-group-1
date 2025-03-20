@@ -5,21 +5,28 @@ using UnityEngine;
 using UnityEngine.UI;
 using NativeWebSocket;
 public class WebSocketClient : MonoBehaviour
-{
-    public GameManager gameManager;
-    
+{  
     [SerializeField] private string IPAdress = "10.93.102.170"; //The IP Adress of the Server you want to connect to
 
     [SerializeField] private int Port = 3000; //The Port your WebSocket Connection will "talk" to
 
     private WebSocket webSocket;
 
-    // Start is called before the first frame update
-    private void Start()
+    public static WebSocketClient Instance;
+    
+    private void Awake()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
         initWebSocket();
     }
+
 
     // Update is called once per frame
     private void Update()
@@ -75,10 +82,10 @@ public class WebSocketClient : MonoBehaviour
     {
         var socketMessage = Encoding.UTF8.GetString(data);
 
-        if (socketMessage.Contains("EMERGENCY BUTTON PRESSED") && !gameManager.isSafePlace)
+        if (socketMessage.Contains("EMERGENCY BUTTON PRESSED") && !GameManager.Instance.isSafePlace)
         {
             Debug.Log("====>Emergency Button");
-            gameManager.MoveToSafeEnvironment();
+            GameManager.Instance.MoveToSafeEnvironment();
         }
     }
 

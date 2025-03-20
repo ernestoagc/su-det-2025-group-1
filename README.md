@@ -175,27 +175,33 @@ To use Feel The Edge and interact with its features, follow the guidelines below
 5. Listen and look at what's happening around you, and try to increase the level of distractions once you feel comfortable with the current level.
 6. If you feel uncomfortable or wish to stop the experience, press the button on your chest to be transported to the Safe Space.
 
+## Configuration
+
+Both the VR Headset and the tactile IOT vest have to be connected to the same network.
+
 ---
 
 ## References
 
 Sounds:
-https://freesound.org/s/144904/
-https://freesound.org/s/232175/
-https://freesound.org/s/43365/
-https://freesound.org/s/546033/
-https://freesound.org/s/766202/
-https://freesound.org/s/149468/
-https://freesound.org/s/610761/
-https://freesound.org/s/580685/
-https://freesound.org/s/506759/
-https://freesound.org/s/219220/
-https://freesound.org/s/377003/
+
+- https://freesound.org/s/144904/
+- https://freesound.org/s/232175/
+- https://freesound.org/s/43365/
+- https://freesound.org/s/546033/
+- https://freesound.org/s/766202/
+- https://freesound.org/s/149468/
+- https://freesound.org/s/610761/
+- https://freesound.org/s/580685/
+- https://freesound.org/s/506759/
+- https://freesound.org/s/219220/
+- https://freesound.org/s/377003/
 
 3D Assets:
-https://assetstore.unity.com/packages/3d/props/interior/bedroom-interior-low-poly-assets-295074
-https://assetstore.unity.com/packages/3d/environments/school-assets-146253
-https://assetstore.unity.com/packages/3d/characters/city-people-free-samples-260446
+
+- https://assetstore.unity.com/packages/3d/props/interior/bedroom-interior-low-poly-assets-295074
+- https://assetstore.unity.com/packages/3d/environments/school-assets-146253
+- https://assetstore.unity.com/packages/3d/characters/city-people-free-samples-260446
 
 ---
 
@@ -212,6 +218,5 @@ anje7074@student.su.se
 Ernesto Galarza
 
 Florian Unger  
-[Linkedin](https://www.linkedin.com/in/florian-unger-ab943a17b/)
 flun4103@student.su.se
-florian.a.unger@gmail.com
+[Linkedin](https://www.linkedin.com/in/florian-unger-ab943a17b/)

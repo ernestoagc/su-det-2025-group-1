@@ -108,9 +108,34 @@ Feel The Edge includes the following features:
 
 ## Installation
 
+To install and run "Feel The Edge", follow the instructions below.
+
 ### IOT Vest
 
-asdf
+The tactile vest used to enable the users to intuitively tap out of the experience and also feel tactile feedback is built as follows.
+
+- The whole system is mounted onto a T-Shirt which has been opened in the back to allow size adjustment via velcro.
+- The vibration motors are put on the inside of the arm pieces where they can be fixed to the arm using velcro straps.
+- The ESP32 with the breadboard and wiring is set inside a pouch made out of textile on the T-Shirt.
+- To allow modularity the vibration sensors and the capacitive touch sensor are detachable via connectors.
+- For the intuitive tap out button the capacitive touch sensor is mounted on a soft plastic which is glued onto the T-Shirt.
+
+#### Components
+
+- T-Shirt
+- Velcro
+- ESP32-S2 Thing Plus
+- LiPo Battery 3.7 V, 1500
+- 2x Vibration Motor
+- Piece of copper or other conductive material (adjust capacity threshold in code to fit material)
+- 2x 1k Ohm Resistor
+- 2x BC547C NPN Transistor
+- Breadboard small
+- Various wires
+
+#### Wiring/Schematics
+
+![Schematics](vr-unity/readme/schematics_vest.png)
 
 ### Software
 

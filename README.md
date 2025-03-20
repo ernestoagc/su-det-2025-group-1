@@ -155,24 +155,27 @@ Also, during the installation setup, you should select the following options:
 - Microsoft Visual Studio IDE (for code editing). 
 - Android Build Support 
 
-![unityhub](vr-unity/readme/unity-installation.png)
+  <img src="vr-unity/readme/unity-installation.png" width="600" />
 
-**3) Configuring  Unity Project**
-**a. Import the Meta XR SDK:**
+
+**3. Configuring  Unity Project**  
+**a. Import the Meta XR SDK:**  
 - Navigate to Window > Package Manager.
 - Click the '+' icon and select 'Add package by name'.
 - Enter 'com.meta.xr.sdk.all' and click 'Add'. Restart Unity if prompted.
+- The version used in this project was 71.0.0
 
-![meta-library](vr-unity/readme/unity-import-sdk.png)
+  <img src="vr-unity/readme/unity-import-sdk.png" width="600" />
 
 
-**b. Build Setting Configuration:**
+**b. Build Setting Configuration:**  
  - Go to File > Build Settings 
  - select 'Android' as the target platform. 
  - Click 'Switch Platform' to confirm.
  - On Scenes in Build add: startup-environment, design-environment and safety-environment 
 
-![setting-build](vr-unity/readme/unity-build-setting.png)
+  <img src="vr-unity/readme/unity-build-setting.png" width="600" />
+
 
 To install and run Feel The Edge on your platform or device, follow the instructions below:
 
@@ -201,7 +204,9 @@ To use Feel The Edge and interact with its features, follow the guidelines below
 
 ## Configuration
 
-Both the VR Headset and the tactile IOT vest have to be connected to the same network.
+Both the VR Headset and the tactile IOT vest have to be connected to the same network.  
+
+The structure of the repository is split into two folders, one is dedicated to IoT-Arduino and other one for VR-Unity.  
 
 ---
 

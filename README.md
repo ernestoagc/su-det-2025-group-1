@@ -1,10 +1,8 @@
 # Feel The Edge
 
-## -- Catchy slogan or a logo or poster for the project --
+## Take Control of the Distractions, Find Your Peace!
 
-**-- POSTER? --**
-
----
+  <img src="vr-unity/readme/poster.jpg" width="600" />  
 
 ## Introduction
 
@@ -22,15 +20,16 @@ When users feel uncomfortable or reach their limit, they can change the level of
 
 The Design Process started with a **brainstorming session**, where each of us tried to think of as many problems, ideas, and solutions as possible, covering various disabilities, and solutions that could be completed within the given timeframe.
 
-![Brainstorming](vr-unity/readme/brainstorm.png)
+<img src="vr-unity/readme/brainstorm.png" width="600" />  
+
 
 Afterward, each team member presented one idea to the classroom and received feedback on which option was the most logical to proceed with.
 
-![Sketch](vr-unity/readme/sketch.png)
+<img src="vr-unity/readme/sketch.png" width="600" />  
 
 Once the project idea was decided, the team discussed the project purpose and the experience itself. This discussion helped build the **Design Document**, which included a timeline for each week.
 
-![Whiteboard Discussion](vr-unity/readme/whiteboard.jpg)
+<img src="vr-unity/readme/whiteboard.jpg" width="600" />  
 
 ---
 
@@ -42,13 +41,13 @@ From that, two **personas** were created from the information gathered, with the
 
 #### John - Persona and User Journey Map
 
-![John Persona](vr-unity/readme/JohnPersona.png)
-![John User Journey Map](vr-unity/readme/JohnJourney.png)
+<img src="vr-unity/readme/JohnPersona.png" width="600" />  
+<img src="vr-unity/readme/JohnJourney.png" width="600" />  
 
 #### Emma - Persona and User Journey Map
 
-![Emma Persona](vr-unity/readme/EmmaPersona.png)
-![Emma User Journey Map](vr-unity/readme/EmmaJourney.png)
+<img src="vr-unity/readme/EmmaPersona.png" width="600" />  
+<img src="vr-unity/readme/EmmaJourney.png" width="600" />  
 
 After this process, the team identified key problems and developed solutions for how the whole experience would look. The solution is an experience designed to help users practice their stability while being distracted by objects and sounds that typically cause anxiety.
 
@@ -60,8 +59,7 @@ The team envisioned a **Safe Space** and Environment where users can manipulate 
 
 This would be achieved by using a menu where the user could activate disturbing sounds, trigger lights that flicker, and control the people in the room and their movement—challenges identified as particularly problematic for these individuals.
 
-![Classroom](vr-unity/readme/classroom_scene.jpg)
-
+<img src="vr-unity/readme/classroom_scene.jpg" width="600" />  
 ---
 
 ### Safe Space, Emergency Button, Tactile Feedback
@@ -70,7 +68,9 @@ For safety, the safe space environment is where users enter once they press the 
 
 Users also have the option to control the **tactile feedback** they receive on their shoulders when someone approaches them in VR.
 
-![Tshirt](vr-unity/readme/vestonbody.png)
+<img src="vr-unity/readme/vestonbody.png" width="600" />  
+
+
 
 ---
 
@@ -119,11 +119,12 @@ The tactile vest used to enable the users to intuitively tap out of the experien
 - The ESP32 with the breadboard and wiring is set inside a pouch made out of textile on the T-Shirt.
 - To allow modularity the vibration sensors and the capacitive touch sensor are detachable via connectors.
 
-  <img src="vr-unity/readme/connectors.jpg" width="200" height="200" />
+  <img src="vr-unity/readme/connectors.jpg" width="600" />
 
 - For the intuitive tap out button the capacitive touch sensor is mounted on a soft plastic which is glued onto the T-Shirt.
 
-![T-Shirt laid out](vr-unity/readme/TShirt_laidout.jpg)
+  <img src="vr-unity/readme/TShirt_laidout.jpg" width="600" />
+
 
 #### Components
 
@@ -140,9 +141,10 @@ The tactile vest used to enable the users to intuitively tap out of the experien
 
 #### Wiring/Schematics
 
-![Schematics](vr-unity/readme/schematics_vest.png)
+  <img src="vr-unity/readme/schematics_vest.png" width="600" />
 
-![Picture of Wiring](vr-unity/readme/esp32.jpg)
+  <img src="vr-unity/readme/esp32.jpg" width="600" />
+
 
 ### Software
 

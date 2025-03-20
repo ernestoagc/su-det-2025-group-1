@@ -176,8 +176,7 @@ Also, during the installation setup, you should select the following options:
 
   <img src="vr-unity/readme/unity-build-setting.png" width="600" />
 
-
-To install and run Feel The Edge on your platform or device, follow the instructions below:
+---
 
 | **Platform** | **Device** | **Requirements**                            | **Commands**                                                                                                                                          |
 | ------------ | ---------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -186,8 +185,7 @@ To install and run Feel The Edge on your platform or device, follow the instruct
 
 You also need to install the following dependencies or libraries for your project:
 
-- **Library A** – a Unity plugin for building VR and AR experiences
-- **Library B** – a C# wrapper for speech recognition and synthesis
+- A Unity plugin for building VR and AR experiences
 
 ---
 

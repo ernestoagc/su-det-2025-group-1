@@ -2,8 +2,6 @@
 
 ## Take Control of the Distractions, Find Your Peace!
 
-  <img src="vr-unity/readme/poster.jpg" width="600" />  
-
 ## Introduction
 
 Feel The Edge is an educational VR experience designed to help users deal with different distractions by simulating multiple audio and visual triggers, all while they are in a safe environment.

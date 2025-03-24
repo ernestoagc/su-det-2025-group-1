@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
 
     public void MoveToSafeEnvironment()
     {
-        isSafePlace = true;
         SceneManager.LoadScene("safety-environment");
+        isSafePlace = true;
     }
 
     public void EnableWalk()
@@ -53,8 +53,8 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         Debug.Log("Calling method ..RestartGame");
-        isSafePlace = false;
         SceneManager.LoadScene("design-environment");
+        isSafePlace = false;
     }
 
     public void SendVibration()
